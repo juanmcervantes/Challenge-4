@@ -1,48 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Coding Quiz</title>
-
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-  </head>
-
-  <body>
-    <div class="scores"><a href="highscores.html">View Highscores</a></div>
-
-    <div class="timer">Time: <span id="time">0</span></div>
-
-    <div class="wrapper">
-      <div id="start-screen" class="start">
-        <h1>Coding Quiz Challenge</h1>
-        <p>
-          Try to answer the following code-related questions within the time
-          limit. Keep in mind that incorrect answers will penalize your
-          score/time by 15 seconds!
-        </p>
-        <button id="start">Start Quiz</button>
-      </div>
-
-      <div id="questions" class="hide">
-        <h2 id="question-title"></h2>
-        <div id="choices" class="choices"></div>
-      </div>
-
-      <div id="end-screen" class="hide">
-        <h2>All done!</h2>
-        <p>Your final score is <span id="final-score"></span>.</p>
-        <p>
-          Enter initials: <input type="text" id="initials" max="3" />
-          <button id="submit">Submit</button>
-        </p>
-      </div>
-
-      <div id="feedback" class="feedback hide"></div>
-    </div>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./assets/css/styles.css"> <!-- Linking the stylesheet -->
+</head>
+<body>
+    <header>
+        <div id="time">Time: 0</div> <!-- Displaying the time -->
+    </header>
+    <main>
+        <!-- Start Screen Section -->
+        <div id="start-screen">
+            <h1>Code Quiz</h1>
+            <button id="start" onclick="startQuiz()">Start Quiz</button> <!-- Start Quiz Button -->
+        </div>
+        
+        <!-- Questions Section -->
+        <div id="questions" class="hide">
+            <div id="question-title"></div> <!-- Displaying the question title -->
+            <div id="choices"></div> <!-- Displaying the choices -->
+        </div>
+        
+        <!-- End Screen Section -->
+        <div id="end-screen" class="hide">
+            <h1>Game Over!</h1>
+            <div id="final-score"></div> <!-- Displaying the final score -->
+            <input type="text" id="initials" placeholder="Initials"> <!-- Input for initials -->
+            <button id="submit" onclick="saveHighscore()">Submit</button> <!-- Submit Button -->
+        </div>
+    </main>
+    
+    <!-- Including JavaScript Files -->
     <script src="./assets/js/questions.js"></script>
     <script src="./assets/js/logic.js"></script>
-  </body>
+</body>
 </html>
