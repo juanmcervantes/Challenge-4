@@ -28,7 +28,7 @@ function clearHighscores() {
 }
 
 // Attach the clearHighscores function to the click event of the 'clear' button
-document.getElementById('clear').onclick = clearHighscores;
+document.getElementById('clear').addEventListener('click', clearHighscores);
 
 // Run the printHighscores function when the page loads to display the high scores
 printHighscores();
