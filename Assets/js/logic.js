@@ -71,9 +71,11 @@ function questionClick() {
     timerEl.textContent = time;
     sfxWrong.play();
     feedbackEl.textContent = 'Wrong!';
+    feedbackEl.className = 'feedback incorrect'; // Added line
   } else {
     sfxRight.play();
     feedbackEl.textContent = 'Correct!';
+    feedbackEl.className = 'feedback correct'; // Added line
   }
 
   // Move to next question
@@ -86,6 +88,7 @@ function questionClick() {
     getQuestion();
   }
 }
+
 
 function quizEnd() {
   // Stop timer

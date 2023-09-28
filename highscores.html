@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character Encoding for the Document -->
     <meta charset="UTF-8">
+    <!-- Setting the Viewport for Responsive Design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the Webpage -->
     <title>High Scores</title>
-    <link rel="stylesheet" href="./assets/css/styles.css"> <!-- Linking the stylesheet -->
+    <!-- Linking the External Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-    <main>
+    <!-- Wrapper Div to Style the Content -->
+    <div class="wrapper">
+        <!-- Heading for High Scores Page -->
         <h1>High Scores</h1>
-        <ol id="highscores"></ol> <!-- Ordered List to Display High Scores -->
-        <button id="clear" onclick="clearHighscores()">Clear Highscores</button> <!-- Clear Highscores Button -->
-    </main>
-    <script src="./assets/js/scores.js"></script> <!-- Including JavaScript File -->
+        <!-- Ordered List to Display High Scores -->
+        <ol id="highscores"></ol>
+        <!-- Go Back Button, Redirects to the Index Page -->
+        <a href="index.html"><button>Go Back</button></a>
+        <!-- Clear Highscores Button, Calls the clearHighscores Function on Click -->
+        <button id="clear" onclick="clearHighscores()">Clear Highscores</button>
+    </div>
+    <!-- Including External JavaScript File -->
+    <script src="./assets/js/scores.js"></script>
 </body>
 </html>
-
