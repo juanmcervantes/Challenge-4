@@ -59,6 +59,11 @@ button:hover {
   display: block;
 }
 
+#choices button {
+  display: block;
+  margin-bottom: 10px; /* Adds some space between the buttons */
+}
+
 /* Styling for input fields of type 'text' */
 input[type="text"] {
   font-size: 100%;
