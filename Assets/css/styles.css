@@ -1,18 +1,22 @@
+/* Base styling for the body */
 body {
   font-family: Arial;
   font-size: 120%;
 }
 
+/* Styling for anchor tags */
 a {
   color: #563d7c;
   text-decoration: none;
   transition: color 0.1s;
 }
 
+/* Hover effect for anchor tags */
 a:hover {
   color: #8570a5;
 }
 
+/* Base styling for buttons */
 button {
   display: inline-block;
   margin: 5px;
@@ -26,52 +30,106 @@ button {
   transition: background-color 0.1s;
 }
 
+/* Hover effect for buttons */
 button:hover {
   background-color: #8570a5;
 }
 
+/* Specific styling for the 'clear' button */
+#clear {
+  padding: 10px 20px;
+  background-color: #ff4b4b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover and active state styling for the 'clear' button */
+#clear:hover {
+  background-color: #ff1e1e;
+}
+
+#clear:active {
+  background-color: #e41717;
+}
+
+/* Styling for buttons inside the choices container */
 .choices button {
   display: block;
 }
 
+/* Styling for input fields of type 'text' */
 input[type="text"] {
   font-size: 100%;
 }
 
+/* Styling for ordered lists */
 ol {
   padding-left: 0px;
   max-height: 400px;
   overflow: auto;
 }
 
+/* Base styling for list items */
 li {
   padding: 5px;
   list-style: decimal inside none;
 }
 
+/* Background styling for odd list items */
 li:nth-child(odd) {
   background-color: #f3edfc;
 }
 
+/* Styling for highscores container */
+#highscores {
+  padding: 20px;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Styling for list items in highscores container */
+#highscores li {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Hover effect for list items in highscores */
+#highscores li:hover {
+  background-color: #e0e0e0;
+}
+
+/* Wrapper styling */
 .wrapper {
   margin: 100px auto 0 auto;
   max-width: 600px;
 }
 
+/* Class to hide elements */
 .hide {
   display: none;
 }
 
+/* Styling for start container */
 .start {
   text-align: center;
 }
 
+/* Styling and positioning for scores container */
 .scores {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  margin-left: 20px;
 }
 
+/* Styling and positioning for timer */
+.timer {
+  margin-right: 20px;
+}
+
+/* Styling for feedback messages */
 .feedback {
   font-style: italic;
   font-size: 120%;
@@ -81,24 +139,43 @@ li:nth-child(odd) {
   border-top: 2px solid #ccc;
 }
 
-.timer {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
+/* Styling for correct feedback messages */
 .feedback.correct {
   color: green;
-}
-
-.feedback.incorrect {
-  color: red;
-}
-
-/* If you want to have different background colors for correct and incorrect feedback */
-.feedback.correct {
   background-color: #e6f9e6; /* Light green background */
 }
 
+/* Styling for incorrect feedback messages */
 .feedback.incorrect {
+  color: red;
   background-color: #ffe6e6; /* Light red background */
+}
+
+/* Responsive styling for highscores container and list items */
+@media (max-width: 600px) {
+  #highscores {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  #highscores li {
+    font-size: 16px;
+  }
+}
+
+/* Container for scores and timer */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjusting the top margin for main content to avoid being hidden behind the fixed header */
+main {
+  margin-top: 60px; /* Adjust this value according to the height of your header */
 }
