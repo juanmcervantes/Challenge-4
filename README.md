@@ -47,4 +47,4 @@ Code Quiz is an interactive web application designed to test your coding knowled
 
 ## Contribution
 
-Contributions, issues, and feature requests are welcome. Feel free to check [issues page](https://github.com/your-username/Code-Quiz/issues) if you want to contribute.
+Contributions, issues, and feature requests are welcome. Feel free to check if you want to contribute.
