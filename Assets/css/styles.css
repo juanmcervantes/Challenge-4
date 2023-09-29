@@ -118,7 +118,48 @@ li:nth-child(odd) {
 .hide {
   display: none;
 }
+/* New styles for the Start Screen Section */
+#start-screen {
+  text-align: center;
+  margin-top: 100px;
+}
 
+/* Style for the Start Screen Title */
+#start-screen h1 {
+  font-size: 2rem;
+  color: #563d7c;
+}
+
+/* Style for the Start Screen Description */
+#start-screen p {
+  font-size: 1rem;
+  color: #333;
+  margin: 20px 0;
+}
+
+/* Style for the Start Quiz Button */
+#start {
+  font-size: 1.2rem;
+  background-color: #563d7c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Hover effect for the Start Quiz Button */
+#start:hover {
+  background-color: #8570a5;
+}
+
+/* Your existing styles below this line */
+
+/* Styling for start container */
+.start {
+  text-align: center;
+}
 /* Styling for start container */
 .start {
   text-align: center;
